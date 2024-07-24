@@ -1,0 +1,33 @@
+.popular{
+    margin-top: 5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.popular h1{
+    text-decoration: underline;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    color: aqua;
+}
+
+.popular-product{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.popular-product img{
+    width: 250px;
+    max-width: 350px;
+    padding: 1rem;
+}
+
+.popular-product .product-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

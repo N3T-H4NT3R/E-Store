@@ -1,0 +1,33 @@
+.new{
+    margin-top: 5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.new h1{
+    text-decoration: underline;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: aqua;
+}
+
+.new-product{
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.new-product img{
+    width: 250px;
+    max-width: 350px;
+    padding: 1rem;
+}
+
+.new-product .product-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

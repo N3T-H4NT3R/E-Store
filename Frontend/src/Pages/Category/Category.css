@@ -1,0 +1,82 @@
+.category{
+    margin-top: 0.5rem;
+}
+
+.category img{
+    width: 100%;
+    min-height: 70px;
+    height: auto;
+    margin-top: 0.5rem;
+}
+
+.product-list{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.product-list img{
+    width: 320px;
+    height: auto;
+    max-height: 350px;
+    border-radius: 20px 20px 0 0;
+}
+
+.product-list .product-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: transparent;
+    border-bottom: 1px solid #f87306;
+    border-top: 1px solid #272727;
+    height: 2.4rem;
+    border-radius: 0 0 20px 20px;
+}
+
+.product-list .product-info:hover{
+    border-bottom: 1px solid #21a2ec;
+}
+
+.product-info p:nth-child(even){
+    color: #025099;
+    font-size: 20px;
+    color: #272727;
+}
+  
+  .product-info p:nth-child(odd){
+    font-size: 20px;
+    color: #272727;
+}
+
+/* Respponseve ness for Tablete Size and Phone Screen Size */
+
+@media (max-width: 850px) {
+    .product-list img {
+      max-width: 280px;
+    }
+  }
+  
+  @media (max-width: 720px) {
+    .product-list img {
+      max-width: 240px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-list img {
+      max-width: 180px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .product-list img {
+      max-width: 140px;
+    }
+  
+    .product-info p {
+      font-size: 14px;
+    }
+  }

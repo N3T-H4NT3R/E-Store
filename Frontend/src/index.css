@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: #000000;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: hsl(90, 10%, 100%);
+}
+
+.navbar .middle-side ul li hr{
+    color: #ff0000;
+    margin-bottom: 1rem;
+}
+
+.hide-for-navber{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}

@@ -1,0 +1,250 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: hsl(90, 10%, 100%);
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 0 20px #000000;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+#carlos{
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+}
+
+.left-side{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1rem;
+}
+
+.left-side img{
+    width: 70px;
+    height: 70px;
+}
+
+.left-side p{
+    font-size: 23px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    color: #ac727c;
+    letter-spacing: 5px;
+}
+
+.left-side p:hover{
+    cursor: default;
+    color: #272727;
+    cursor: pointer;
+}
+
+.middle-side ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.middle-side ul li{
+    padding: 20px;
+    font-size: 20px;
+}
+
+.navbar .middle-side .ancur:nth-child(odd){
+    color: #05aaf7;
+}
+
+.navbar .middle-side ul li .ancur:hover{
+    color: #ffa500;
+}
+
+.right-side{
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-side button{
+    border: 1px solid #000000;
+    outline: none;
+    background-color: transparent;
+    width: 7rem;
+    height: 2rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+    color: #000000;
+    padding-top: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.right-side .cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-side p{
+    font-size: 1.4rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.right-side button:active{
+    background-color: #000000;
+    border: none;
+    transition: all 5ms;
+}
+
+.cart-counter{
+    background-color: #ff0000;
+    color: #ffffff;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: -30px;
+    margin-left: -10px;
+}
+
+.cart-icon{
+    font-size: 32px;
+    margin-left: 3rem;
+}
+
+.menu-icon{
+    font-size: 32px;
+    margin-left: 3rem;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 850px){
+    .navbar{
+        height: 70px;
+    }
+
+    .left-side img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .left-side p{
+        font-size: 20px;
+    }
+
+    .middle-side ul li{
+        padding: 18px;
+        font-size: 18px;
+    }
+
+    .right-side button{
+        width: 7rem;
+        height: 2rem;
+        margin-right: 1px;
+        font-size: 12px;
+    }
+    
+    .cart-icon{
+        font-size: 24px;
+        margin-left: 3rem;
+    }
+
+    
+    .cart-counter{
+        width: 16px;
+        height: 16px;
+        margin-top: -26px;
+        margin-left: -7px;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+        position: sticky;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    .cart-counter{
+        width: 16px;
+        height: 16px;
+        margin-top: -15px;
+        margin-left: -8px;
+    }
+
+    .auth-nav-list p{
+        margin-top: 1rem;
+        height: auto;
+        text-align: center;
+        margin-left: 3rem;
+    }
+    
+    .left-side img{
+        display: none;
+    }
+    
+    .navbar .middle-side ul{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right-side button{
+        border: none;
+        font-size: 20px;
+    }
+
+    .right-side button:active{
+        background-color: transparent;
+    }
+
+    .navbar .middle-side ul li hr{
+        display: none;
+    }
+
+    .right-side{
+        border: none;
+        font-size: 30px;    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cart-icon{
+        border: none;
+        font-size: 30px;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .cart-counter{
+        margin-top: -15px;
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .middle-side ul li{
+        padding: 5px;
+    }
+}

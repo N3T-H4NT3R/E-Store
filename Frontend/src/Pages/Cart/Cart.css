@@ -1,0 +1,152 @@
+.cart-products {
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.cart-format {
+  margin-right: 38rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin: 1rem;
+}
+
+.cart-format > div {
+  display: flex;
+  align-items: center;
+}
+
+.cart-format img {
+  width: 100px;
+  min-width: auto;
+  height: auto;
+}
+
+.cart-quantity {
+  width: 50px;
+  height: auto;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cart-format img:last-child {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.total-cart-info,
+.payment-system{
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.format{
+  display: flex;
+  flex-direction: column;
+  margin-left: -1rem;
+}
+
+.total-cart-info h4{
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #db6a0e;
+}
+
+tbody{
+  border-bottom: 2px solid #000000;
+}
+
+.total-cart-info span{
+  text-decoration: underline;
+}
+
+.total-cart-info p{
+  color: #db6a0e;
+}
+
+#payment-btn{
+  width: 100%;
+  height: 2rem;
+  border: none;
+  outline: none;
+  background-color: #327c32;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.total-cart-info div{
+  display: flex;
+  margin-top: 5rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  background-color: #ccc;
+}
+
+
+@media (max-width: 1024px) {
+  .cart-format-main > div,
+  .cart-format > div {
+    flex-basis: calc(100% / 6);
+  }
+}
+
+@media (max-width: 768px) {
+  .format label{
+    display: none;
+  }  
+
+  .cart-format-main > div,
+  .cart-format > div {
+    flex-basis: calc(100% / 5);
+  }
+
+  #cart-image {
+    max-width: 50px;
+    margin-right: 20px;
+  }
+
+  .cart-format .img {
+    margin-left: -20px;
+  }
+
+  .cart-format p{
+    margin-left: 15px;
+  }
+
+  .cart-format span{
+    margin-right:32px;
+  }
+
+  .cart-format p{
+    margin-right:32px;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .cart-format{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem;
+  }
+
+  #cart-image {
+    width: auto;
+    min-width: 12rem;
+    border-radius: 10px;
+    margin: 1rem;
+  }
+
+  #cansel-btn{
+    width: 20px;
+    height: 20px;
+  }
+}
