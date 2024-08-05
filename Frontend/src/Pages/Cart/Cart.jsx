@@ -102,7 +102,7 @@ const Cart = () => {
             cursor:"default"
           }}>{contact.Descriptions}
             </li>
-            <li>Phone: {contact.Phone}</li>
+            <li>Phone: +251 {contact.Phone}</li>
             <li>Address: {contact.Address}</li>
             <li>Telegram: {contact.Telegram}</li>
             <li>Email: {contact.Email}</li>

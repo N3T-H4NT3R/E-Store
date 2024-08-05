@@ -17,7 +17,7 @@ export const Context_Provider = ({children}) => {
     const Nav_Data = async () => {
 
         try{
-            const response = await fetch("http://localhost:8000/navbar/")
+            const response = await fetch("https://c4rl05.pythonanywhere.com/navbar/")
 
             if (response.status == 200){
                 const Data = await response.json()
@@ -37,7 +37,7 @@ export const Context_Provider = ({children}) => {
     const All_Product_Data = async () => {
 
         try{
-            const response = await fetch("http://localhost:8000/product/")
+            const response = await fetch("https://c4rl05.pythonanywhere.com/product/")
 
             if (response.status == 200){
                 const Data = await response.json()
@@ -57,7 +57,7 @@ export const Context_Provider = ({children}) => {
     const About_The_Product_Data = async () => {
 
         try{
-            const response = await fetch("http://localhost:8000/about-broduct/")
+            const response = await fetch("https://c4rl05.pythonanywhere.com/about-broduct/")
 
             if (response.status == 200){
                 const Data = await response.json()
@@ -77,7 +77,7 @@ export const Context_Provider = ({children}) => {
     const Contact_Data = async () => {
 
         try{
-            const response = await fetch("http://localhost:8000/contact-list/")
+            const response = await fetch("https://c4rl05.pythonanywhere.com/contact-list/")
 
             if (response.status == 200){
                 const Data = await response.json()
@@ -97,7 +97,7 @@ export const Context_Provider = ({children}) => {
     const Category_Image_Data = async () => {
 
         try{
-            const response = await fetch("http://localhost:8000/catagory-image/")
+            const response = await fetch("https://c4rl05.pythonanywhere.com/catagory-image/")
 
             if (response.status == 200){
                 const Data = await response.json()
@@ -117,7 +117,7 @@ export const Context_Provider = ({children}) => {
     const Cart_Info_Data = async () => {
 
         try{
-            const response = await fetch("http://localhost:8000/cart/")
+            const response = await fetch("https://c4rl05.pythonanywhere.com/cart/")
 
             if (response.status == 200){
                 const Data = await response.json()
@@ -137,7 +137,7 @@ export const Context_Provider = ({children}) => {
     const Payment_Data = async () => {
 
         try{
-            const response = await fetch("http://localhost:8000/payment-account/")
+            const response = await fetch("https://c4rl05.pythonanywhere.com/payment-account/")
 
             if (response.status == 200){
                 const Data = await response.json()
@@ -158,7 +158,7 @@ export const Context_Provider = ({children}) => {
 
 
         try{
-            const response = await fetch("http://localhost:8000/footer/")
+            const response = await fetch("https://c4rl05.pythonanywhere.com/footer/")
 
             if (response.status == 200){
                 const Data = await response.json()
@@ -179,7 +179,7 @@ export const Context_Provider = ({children}) => {
 
     const Fetch_Hero = async () => {
 
-        const response = await fetch("http://localhost:8000/hero/")
+        const response = await fetch("https://c4rl05.pythonanywhere.com/hero/")
 
         if(response.status == 200){
             const Data = await response.json()
